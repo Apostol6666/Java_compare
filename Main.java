@@ -1,8 +1,11 @@
 package com.company;
 
 abstract class Clothes implements Comparable<Clothes> {
-    abstract int getCost();
+    Clothes(){}
+    Clothes(String n) {this.name = n;}
     String name;
+    
+    abstract int getCost();
 
     public String getName() {
         return this.name;
